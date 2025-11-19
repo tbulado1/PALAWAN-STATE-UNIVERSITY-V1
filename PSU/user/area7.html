@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Palawan State University - CTE</title>
+  <link rel="stylesheet" href="../css/a7style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap JS (for dropdown) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&display=swap" rel="stylesheet">
+     <link rel="icon" type="image/x-icon" href="../picture/palawan.png">
+</head>
+<style>
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  position: relative;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #356608;
+  padding: 8px 12px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #356608;
+  min-width: 150px;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+  border-radius: 4px;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 8px 12px;
+  color: #78e24e;
+}
+
+.dropdown-content a:hover {
+  background-color: #356608;
+}
+
+/* Show dropdown on hover */
+.nav-links li:hover .dropdown-content {
+  display: block;
+}
+
+</style>
+<body>
+    
+ <nav style="width: auto; padding: 20px; display: flex; align-items: center; justify-content: space-between;">
+  
+  <!-- Logo on the left -->
+  <div class="logo">
+    <a href="#home">
+      <img src="../picture/dof.png" alt="Logo" style="height: 50px;">
+    </a>
+  </div>
+
+  <!-- Navigation links -->
+  <ul class="nav-links" style="display: flex; list-style: none; gap: 10px;">
+        <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a></li>
+        <!-- Dropdown for Area A -->
+        <li class="nav-item dropdown">
+          
+            <a 
+            class="nav-link dropdown-toggle" 
+            href="#" 
+            id="areaDropdown" 
+            role="button" 
+            data-bs-toggle="dropdown" 
+            aria-expanded="false"
+            >
+           Areas
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="areaDropdown" >
+              
+            <li><a class="dropdown-item" href="#areas">A</a></li>
+            <li><a class="dropdown-item" href="#areas-b">B</a></li>
+            <li><a class="dropdown-item" href="#areas-c">C</a></li>
+            </ul>
+        </li>
+ </ul>
+
+  <!-- Login dropdown 
+  <ul class="navbar-nav ms-auto">
+        <li class="nav-item dropdown">
+            <a 
+            class="nav-link dropdown-toggle text-white" 
+            style="background-color: green; border-radius: 100px; padding: 10px;"
+            href="#" 
+            id="userDropdown" 
+            role="button" 
+            data-bs-toggle="dropdown" 
+            aria-expanded="false"
+            >
+            Juan Cruz
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+            <li><a class="dropdown-item" href="#">Change Nickname</a></li>
+            <li><a class="dropdown-item" href="#">Change Password</a></li>
+            <li><a class="dropdown-item" href="../index.html">Logout</a></li>
+            </ul>
+        </li>
+    </ul>-->
+</nav>
+
+
+  <!-- Home Section -->
+  <section id="home" class="content-section">
+    <div class="logo-section">
+      <img src="../picture/dof.png" alt="Logo 1" class="logo-small">
+      <img src="../picture/palawan.png" alt="Logo 2" class="logo-large">
+      <img src="../picture/dof.png" alt="Logo 3" class="logo-small">
+    </div>  
+    <div class="welcome-text">
+      <h1>WELCOME</h1>
+      <h2>PALAWAN STATE UNIVERSITY - LINAPACAN</h2>
+      <h3><span class="green">College of Community Resource Development</span></h3>
+      <p>Department of Fisheries</p>     
+      <h4>Bachelor of Science in Fisheries
+</h4>
+    </div>
+    <div class="faculty-photo">
+ <img src="../picture/1.jpg" alt="Faculty Group Photo" />
+    </div>
+  </section>
+
+  <!-- CTE Section -->
+  <section id="area1" class="content-section">
+      <div class="areas-container">
+        <div class="faculty-photo">
+             <img src="../picture/palawan.jpg" alt="Faculty Group Photo" />
+        </div>
+        <div class="area-1">
+          <h1>AREA VII</h1>
+        </div>
+        <div class="area-v">
+          <h1>Library</h1>
+        </div>
+      </div>
+        
+  </section>
+
+<!-- Area A -->
+  <section id="areas" class="content-section">
+      <div class="areas-container">
+          <h2 class="areas-title">A. Administration </h2>
+          <div class="areas-grid">
+
+              <a href="https://docs.google.com/document/d/1GmzPoWsKU4I6fD5d7TB2m0TtWeKuLvoJ/edit?usp=drive_link&ouid=114274002786698236116&rtpof=true&sd=true" class="area-item">
+                  <img src="../picture/dof.png" alt="Area 1">
+                  <h3> A.1. Organizational Structure of the Library </h3>
+              </a>
+
+              <a href="https://docs.google.com/document/d/1xMXFQwcgR_-fHkXarZGm8tAA_qsvWPph/edit?usp=drive_link&ouid=114274002786698236116&rtpof=true&sd=true" class="area-item">
+                  <img src="../picture/dof.png" alt="Area 2">
+                  <h3> A.2. Profile and Functions of the Head Librarian</h3>
+              
+              </a>
+
+              <a href="https://docs.google.com/document/d/1KEDCM6_ctqlN2KkayhHZ7QGJ0WCgiPKN/edit?usp=drive_link&ouid=114274002786698236116&rtpof=true&sd=true" class="area-item">
+                  <img src="../picture/dof.png" alt="Area 3">
+                  <h3>A.3. Composition of the library Advisory Committee, including their functions.</h3>
+                
+              </a>
+
+          </div>
+      </div>
+         
+    </section>
+
+    <!-- Area b -->
+    <section id="areas-b" class="content-section">
+      <div class="areas-container">
+          <h2 class="areas-title">B. Staff/Personnel</h2>
+          <div class="areas-grid">
+
+              <a href="https://docs.google.com/document/d/1hu2nZvwwwYI6QiY_KNJ2jNfIFU5H_Ghc/edit?usp=drive_link&ouid=114274002786698236116&rtpof=true&sd=true" class="area-item">
+                  <img src="../picture/dof.png" alt="Area 1">
+                  <h3> B.1. Profile of the library staff/personnel.</h3>
+                  
+              </a>
+
+              <a  class="area-item">
+                  <img src="../picture/dof.png" alt="Area 2">
+                  <h3> B.2.Evidence of the compliance and adequacy of library personnel. </h3>
+                 
+              </a>
+
+              <a href="https://docs.google.com/document/d/1yVAqZlKkE1OJKBqpsKxCsIEFDqT5RxSn/edit?usp=drive_link&ouid=114274002786698236116&rtpof=true&sd=true" class="area-item">
+                  <img src="../picture/dof.png" alt="Area 3">
+                  <h3>B.3. Copy of the library Staff Development Plan.</h3>
+                  
+              </a>
+              <a href="https://docs.google.com/document/d/1qC5dsv659C-fySQ9Kzhxrgd-tCeUmJpI/edit?usp=drive_link&ouid=114274002786698236116&rtpof=true&sd=true" class="area-item">
+                  <img src="../picture/dof.png" alt="Area 4">
+                  <h3>B.4. Policies on library personnel compensation., privileges and fringe benefits</h3>
+                  
+              </a>
+
+          </div>
+      </div> 
+    </section>
+
+     <!-- Area C -->
+    <section id="areas-c" class="content-section">
+      <div class="areas-container">
+          <h2 class="areas-title">C. Collection Development, Organization and Preservation.</h2>
+          <div class="areas-grid">
+
+              <a href="https://docs.google.com/document/d/1JvdHifActnvDzLABHnN5Hs6Ors1KVGhs/edit?usp=drive_link&ouid=114274002786698236116&rtpof=true&sd=true" class="area-item">
+                  <img src="../picture/dof.png" alt="Area 1">
+                  <h3> C.1. Policies and Collection Development </h3>
+                  
+              </a>
+
+              <a href="https://docs.google.com/document/d/1vIZ-_6u_DLx_WKRvkBmjZDe3DQNGflPP/edit?usp=drive_link&ouid=114274002786698236116&rtpof=true&sd=true" class="area-item">
+                  <img src="../picture/dof.png" alt="Area 2">
+                  <h3> C.2. Inventory and Core collections </h3>
+                  
+              </a>
+
+              <a href="https://docs.google.com/document/d/1rJxzD4p3h8xF8-kV_QvbRRsos9tZpIu8/edit?usp=drive_link&ouid=114274002786698236116&rtpof=true&sd=true" class="area-item">
+                  <img src="../picture/dof.png" alt="Area 3">
+                  <h3>C.3. Evidence on the provision for non-print, digital and electronic resources.</h3>
+                  
+              </a>
+              <a href="https://docs.google.com/document/d/1QdUQmCQNSSYtmquUdR8x890SWvNfPn-E/edit?usp=drive_link&ouid=114274002786698236116&rtpof=true&sd=true" class="area-item">
+                  <img src="../picture/dof.png" alt="Area 4">
+                  <h3> C.4. List of research book materials.</h3>
+                  
+              </a>
+              <a  class="area-item">
+                  <img src="../picture/dof.png" alt="Area 5">
+                  <h3>  C.5. Inventory of Filipiniana collection.</h3>
+                  
+              </a>
+              <a  class="area-item">
+                  <img src="../picture/dof.png" alt="Area 6">
+                  <h3> C.6. Evidence of an accepted and standard classification system. </h3>
+                  
+              </a>
+              <a href="https://docs.google.com/document/d/1_HAHWEVghIxNz0cpLr2jkgtpfBJZwhm_/edit?usp=drive_link&ouid=114274002786698236116&rtpof=true&sd=true" class="area-item">
+                  <img src="../picture/dof.png" alt="Area 7">
+                  <h3>  C.7. Policies on preservation, care and upkeep of library resources.</h3>
+                  
+              </a>
+              <a href="https://docs.google.com/document/d/1kPwkrD36hcxhlJVKI__4jfzSB4pNmmU2/edit?usp=drive_link&ouid=114274002786698236116&rtpof=true&sd=true" class="area-item">
+                  <img src="../picture/dof.png" alt="Area 8">
+                  <h3>  C.8. Evidence that library resources are provided.</h3>
+                  
+              </a>
+              <a  class="area-item">
+                  <img src="../picture/dof.png" alt="Area 9">
+                  <h3> C.9. List of classified library holdings discarded or wedded-out books, serials, professional books and electronic resources.</h3>
+                  
+              </a>
+
+          </div>
+      </div> 
+    </section>
+    <!-- Area D -->
+  <section id="areas" class="content-section">
+      <div class="areas-container">
+          <h2 class="areas-title"> D. Services and Utilization </h2>
+          <div class="areas-grid">
+
+              <a  class="area-item">
+                  <img src="../picture/dof.png" alt="Area 1">
+                  <h3> D.1. Schedule of library hours posted conspicuously. </h3>
+              </a>
+
+              <a class="area-item">
+                  <img src="../picture/dof.png" alt="Area 2">
+                  <h3> D.2. Copy of library rules and regulations posted conspicuously.</h3>
+              
+              </a>
+
+              <a class="area-item">
+                  <img src="../picture/dof.png" alt="Area 3">
+                  <h3> D.3. display board where list of new book arrivals and other relevant information are posted.</h3>
+                
+              </a>
+              <a href="https://docs.google.com/document/d/1UbJZMagNUpKZ7TOArVsVFMYKAP4A8ZDO/edit?usp=drive_link&ouid=114274002786698236116&rtpof=true&sd=true" class="area-item">
+                  <img src="../picture/dof.png" alt="Area 3">
+                  <h3>  D.4. Evidence on the existence of an integrated library system(OPAC, internet CD Rom, database, e-library, etc.).</h3>
+                
+              </a>
+              <a  class="area-item">
+                  <img src="../picture/dof.png" alt="Area 3">
+                  <h3> D.5. Summarized statistical data on library resources utilization.</h3>
+                
+              </a>
+
+          </div>
+      </div>
+         
+    </section>
+    <!-- Area E -->
+  <section id="areas-b" class="content-section">
+      <div class="areas-container">
+          <h2 class="areas-title"> E. Physical Set-up and Facilities </h2>
+          <div class="areas-grid">
+
+              <a  class="area-item">
+                  <img src="../picture/dof.png" alt="Area 1">
+                  <h3> E.1. Library floor plan showing the location of the different offices. </h3>
+              </a>
+
+              <a class="area-item">
+                  <img src="../picture/dof.png" alt="Area 2">
+                  <h3>  E.2. Description of lightning, ventilation, safety and security condition.</h3>
+              
+              </a>
+
+              <a class="area-item">
+                  <img src="../picture/dof.png" alt="Area 3">
+                  <h3>  E.3. Inventory of library, furniture and other physical amenities.</h3>
+                
+              </a>
+
+          </div>
+      </div>
+         
+    </section>
+        <!-- Area E -->
+  <section id="areas-c" class="content-section">
+      <div class="areas-container">
+          <h2 class="areas-title"> F. Financial Support </h2>
+          <div class="areas-grid">
+
+              
+            <a  class="area-item">
+                  <img src="../picture/dof.png" alt="Area 1">
+                  <h3>  F.1. Copy of the general budgetary allocation for the library. </h3>
+              </a>
+
+              <a href="https://docs.google.com/document/d/1ZBl0RziPQN2VTnbAx4iVOp8rAj93LBZF/edit?usp=drive_link&ouid=114274002786698236116&rtpof=true&sd=true" class="area-item">
+                  <img src="../picture/dof.png" alt="Area 2">
+                  <h3>   F.2. Evidence of the head Librarian’s participation if budget </h3>
+              
+              </a>
+
+              <a href="https://docs.google.com/document/d/1PaNUnSdhorNQu-Jg8DS5Kn-0jT7nH1s1/edit?usp=drive_link&ouid=114274002786698236116&rtpof=true&sd=true" class="area-item">
+                  <img src="../picture/dof.png" alt="Area 3">
+                  <h3>   F.3. Evidence that library fees are utilized for library purposes.</h3>
+              </a>
+
+          </div>
+      </div>
+         
+    </section>
+     <section id="areas" class="content-section">
+      <div class="areas-container">
+          <h2 class="areas-title"> G. Linkages </h2>
+          <div class="areas-grid">
+
+              
+        <a href="https://docs.google.com/document/d/1duWTADmKdQZ6wBzF3_uRjzVO1LNaEiOK/edit?usp=drive_link&ouid=114274002786698236116&rtpof=true&sd=true" class="area-item">
+                  <img src="../picture/dof.png" alt="Area 1">
+                  <h3>  G.1. List of the linkages established for exchange of materials,funding and technical assistance. </h3>
+              </a>
+
+             
+          </div>
+      </div>
+         
+    </section>
+
+
+    <!-- Footer Section -->
+
+    <footer class="footer-grid">
+      <!-- left column: two stacked photos -->
+      <div class="left-stack">
+        <img src="../picture/gt.jpg" alt="Group top" class="stack-img top">
+        <img src="../picture/gt2.jpg" alt="Group bottom" class="stack-img bottom">
+      </div>
+
+      <!-- center column: text + overlappi  ng main logo -->
+      <div class="center-content">
+          <div class="center-text">
+              <h3>DEPARTMENT OF FISHERIES</h3>
+              <h1><span class="big-letter">P</span>illar of <span class="big-letter">E</span>xcellence</h1>
+              <h4>Bachelor of Science in Fisheries
+</h4>
+
+              <div class="contact-info">
+                  <p>Contact us:</p>
+                  <div class="contact-icons">
+                      <!-- Facebook -->
+                      <a href="#" class="icon-btn" aria-label="Facebook">
+                          <svg width="22" height="22" viewBox="0 0 320 512" fill="white">
+                          <path d="M279.14 288l14.22-92.66h-88.91V127.33c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72V195.3H22.89V288h81.39v224h100.2V288z"/>
+                          </svg>
+                      </a>
+
+                      <!-- Instagram -->
+                      <a href="#" class="icon-btn" aria-label="Instagram">
+                          <svg width="22" height="22" viewBox="0 0 448 512" fill="white">
+                          <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9S160.5 370.8 224.1 370.8 339 319.5 339 255.9 287.7 141 224.1 141zm0 186.6c-39.6 0-71.8-32.2-71.8-71.7 0-39.6 32.2-71.8 71.8-71.8 39.5 0 71.7 32.2 71.7 71.8 0 39.5-32.2 71.7-71.7 71.7zm146.4-194.3c0 14.9-12 26.9-26.9 26.9-14.9 0-26.9-12-26.9-26.9s12-26.9 26.9-26.9 26.9 12 26.9 26.9zM398.8 80c-7.8-20.7-24.2-37.1-44.9-44.9C327.4 24 278.5 24 224 24s-103.4 0-129.9 11.1c-20.7 7.8-37.1 24.2-44.9 44.9C38 106.5 38 155.4 38 210s0 103.5 11.1 130c7.8 20.7 24.2 37.1 44.9 44.9C120.6 396 169.5 396 224 396s103.4 0 129.9-11.1c20.7-7.8 37.1-24.2 44.9-44.9 11.1-26.5 11.1-75.4 11.1-130s0-103.5-11.1-130z"/>
+                          </svg>
+                      </a>
+
+                      <!-- TikTok -->
+                      <a href="#" class="icon-btn" aria-label="TikTok">
+                          <svg width="22" height="22" viewBox="0 0 448 512" fill="white">
+                          <path d="M448 209.9a210.1 210.1 0 0 1-122.3-39.8v181.7a160 160 0 1 1-137.9-158.3v89.4a71.2 71.2 0 1 0 56.9 69.4V0h80.9a121.5 121.5 0 0 0 1.9 22.2 122.2 122.2 0 0 0 53.8 80.1A121.5 121.5 0 0 0 448 133.6z"/>
+                          </svg>
+                      </a>
+
+                      <!-- Email -->
+                      <a href="mailto:someone@example.com" class="icon-btn" aria-label="Email">
+                          <svg width="22" height="22" viewBox="0 0 512 512" fill="white">
+                              <path d="M502.3 190.8 327.4 338.3a39.8 39.8 0 0 1-51 0L9.7 190.8A39.8 39.8 0 0 1 32 112h448a39.8 39.8 0 0 1 23 78.8z"/>
+                          </svg>
+                      </a>
+                      
+
+                  </div>
+              </div>
+          </div>  
+      </div>
+
+      <!-- right column: big faint watermark logo -->
+      <div class="right-watermark">
+        <img src="../picture/dof.png" alt="Watermark Logo">
+      </div>
+    </footer>
+        
+
+
+
+  <script src="script.js"></script>
+
+  <!--Footer animation-->
+  <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            }
+            });
+        });
+
+        const hiddenElements = document.querySelectorAll('.fade-up, .fade-in');
+        hiddenElements.forEach(el => observer.observe(el));
+  </script>
+  <script>
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Palawan State University - CTE</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&display=swap" rel="stylesheet">
+</head>
+<style>
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.video-wrapper video {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+.custom-play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+  pointer-events: none; /* So clicks go to video, not icon */
+  opacity: 1;
+}
+
+
+.custom-play-button:hover {
+  background: rgba(0, 0, 0, 0.7);
+} 
+.footer-graphics img{          
+  height: 200px;
+  margin-bottom: 300px;
+}
+
+</style>
+<body>
+    
+ <nav style="width: auto; padding: 20px; display: flex; align-items: center; justify-content: space-between;">
+  
+  <!-- Logo on the left -->
+  <div class="logo">
+    <a href="index.html">
+      <img src="./picture/dof.png" alt="Logo" style="height: 50px;">
+    </a>
+  </div>
+
+  <!-- Navigation links -->
+  <ul class="nav-links" style="display: flex; list-style: none; gap: 20px;">
+    <li><a href="#home" class="active">Home</a></li>
+    <li><a href="#cte">CTE</a></li>
+    <li><a href="#admin">Administration</a></li>
+    <li><a href="#areas">Areas</a></li>
+  </ul>
+
+  <!-- Login dropdown -->
+  <ul class="navbar-nav ml-auto">
+    <div class="dropdown-menu">
+      <a class="dropdown-item" style="color: #fff;" href="./login/login.php">Login</a>
+    </div>
+  </ul>
+
+</nav>
+
+
+  <!-- Home Section -->
+  <section id="home" class="content-section">
+    <div class="logo-section">
+      <img src="./picture/dof.png" alt="Logo 1" class="logo-small">
+      <img src="./picture/palawan.png" alt="Logo 2" class="logo-large">
+      <img src="./picture/dof.png" alt="Logo 3" class="logo-small">
+    </div>  
+    <div class="welcome-text">
+      <h1>WELCOME</h1>
+      <h2>PALAWAN STATE UNIVERSITY - LINAPACAN</h2>
+      <h3><span class="green">College of Community Resource Development</span></h3>
+      <p>Department of Fisheries</p>   
+      <h4>Bachelor of Fisheries</h4>
+    </div>
+    <div class="faculty-photo">
+      <img src="./picture/gt2.jpg" alt="Faculty Group Photo" />
+    </div>
+  </section>
+
+  <!-- CTE Section -->
+  <section id="cte" class="content-section">
+    <div class="cte-container">
+        <!-- LEFT COLUMN -->
+        <div class="cte-left">
+            <div class="discover-box">
+                <h2>Discover</h2>
+                <span>BPED</span>
+            </div>
+
+            <h3>CTE GOAL</h3>
+            <p>
+                The College of Teacher Education aims to upgrade the quality of basic education 
+                in the country by providing excellent instruction, research, extension, and 
+                production services relevant to pre-service teacher education.
+            </p>
+
+            <h3>OBJECTIVES</h3>
+            <h4>Bachelor of Physical Education</h4>
+            <p>
+                To produce scientifically inclined physical education graduates who are imbued 
+                with values and whose knowledge and skills will respond to the national and 
+                global demands. Moreover, it will prepare and train qualified students to teach 
+                Physical Education, Health Education, and Sports in the Elementary, Secondary, 
+                and Tertiary levels, and to become sports, dance, recreation, and fitness specialists.
+            </p>
+
+            <div class="footer-note">
+                <p>Preliminary Survey Visit</p>
+                <h5>College of Teacher Education</h5>
+            </div>
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div class="cte-right">
+          <img src="./picture/owl wc.png" alt="Owl Mascot" class="owl-img"> 
+
+          <!-- Container for teacher and video -->
+          <div class="media-section">
+              <div class="video-frame">
+                  <div class="video-wrapper" id="videoWrapper">
+                      <video id="bpedVideo" autoplay muted playsinline poster="./picture/thumbnail.jpg">
+                          <source src="./picture/video.MOV" type="video/mp4" />
+                          Your browser does not support the video tag.
+                      </video>
+                      <div class="custom-play-button" id="playButton">&#9658;</div>
+                  </div> 
+              </div>
+           </div>
+
+            <div class="video-footer">
+                <img src="./picture/dof.png" alt="Logo 1">
+                <span>INNOVATOR</span>
+                <img src="./picture/palawan.png" alt="Logo 2">
+            </div>
+          
+
+            <div class="footer-graphics">
+                <img src="./picture/students.png" alt="Students sitting" />
+            </div>
+        </div>
+
+  </section>
+
+  <!-- Admin Section -->
+  <section id="admin" class="content-section">
+    <div class="admin-container">
+        <h1 class="welcome-title">Welcome Message</h1>
+
+        <div class="message-grid">
+        <!-- LEFT COLUMN -->
+        <div class="message-column">
+            <div class="admin-card">
+            <img src="./picture/md.jpg" alt="Dean of CTE">
+            </div>
+            <p>
+            The College of Teacher Education is committed to maintain its status as the Center
+            of Excellence in Teacher Education in MIMAROPA. Currently, the College has three (3)
+            curricular programs, namely: the Bachelor of Secondary Education (BSED); the Bachelor
+            of Elementary Education (BEED); and the Bachelor of Physical Education (BPED).
+            </p>
+            <p>
+            Since January 2023, the BSED program is ACCREDITED Level 4 while the BEED program had
+            already compiled all requirements and is waiting for results. Hopefully, the BEED
+            program can be granted Level 4 status this month. Today, we have the honor to submit
+            the BPED program for this preliminary survey visit.
+            </p>
+            <p>
+            The Bachelor of Physical Education (BPED) is a newly implemented program at the College,
+            designed to produce graduates who are not only physically educated but also advocates of
+            health and wellness. Even with challenges brought by the pandemic and extreme weather,
+            the College continued to offer the best learning experiences through blended learning
+            modalities that allow our students to adapt and succeed. Thus, we were able to harvest
+            the first cohort of graduates in July 2023.
+            </p>
+            <p>
+            The faculty, led by the Chairperson and the Dean of the College of Teacher Education,
+            ensured that students receive the quality education they deserve, resulting in a higher
+            passing rate for first-time LET takers since March 2023. The Department of Physical
+            Education has also forged partnerships with local and international institutions through
+            research, conferences, and training.
+            </p>
+            <p>
+            Our team has diligently prepared for this visit, ensuring all documents and evidence are
+            in place to demonstrate our commitment to providing quality education. On behalf of the
+            entire faculty and staff, I welcome you to CTE – the home of innovators!
+            </p>
+            <h3 class="admin-name">Dr. Maries A. Salvador</h3>
+            <p class="admin-title">Dean, College of Teacher Education</p>
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div class="message-column">
+            <div class="admin-card">
+            <img src="./picture/md2.avif" alt="Chairperson BPED">
+            </div>
+            <p>
+            Welcome to the Hub of Future Fitness and Wellness Advocates, and Physical Education Teachers!
+            </p>
+            <p>
+            On behalf of the College of Teacher Education's Department of Physical Education,
+            we are excited to welcome you to the Bachelor of Physical Education Preliminary Survey Visit.
+            </p>
+            <p>
+            Five years ago, the BPED program was introduced as a new pathway for students aspiring
+            to become PE teachers. In 2022, the program earned a Certificate of Compliance from
+            the Commission on Higher Education, affirming adherence to the rigorous standards of
+            Palawan State University.
+            </p>
+            <p>
+            This year, we are seeking a preliminary survey visit as the initial step toward formal
+            accreditation. We believe this will validate our commitment to quality and enhance
+            students’ educational experience.
+            </p>
+            <p>
+            We are eager to share the achievements and innovations our team has worked on.
+            We are committed to transparency and open dialogue and look forward to productive
+            discussions that will contribute to the continuous enhancement of our program.
+            </p>
+            <h3 class="admin-name">Ms. Diane Low J. Bautista</h3>
+            <p class="admin-title">
+            Chairperson, Department of Physical Education<br>
+            College of Teacher Education
+            </p>
+        </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Areas Section -->
+    <section id="areas" class="content-section">
+        <div class="areas-container">
+            <h2 class="areas-title">AREAS</h2>
+            <div class="areas-grid">
+
+                <a href="area1.html" class="area-item">
+                    <img src="./picture/dof.png" alt="Area 1">
+                    <h3>AREA I</h3>
+                    <p>Vision, Mission, Goals and Objectives</p>
+                </a>
+
+                <a href="area2.html" class="area-item">
+                    <img src="./picture/dof.png" alt="Area 2">
+                    <h3>AREA II</h3>
+                    <p>Faculty</p>
+                </a>
+
+                <a href="area3.html" class="area-item">
+                    <img src="./picture/dof.png" alt="Area 3">
+                    <h3>AREA III</h3>
+                    <p>Curriculum and Instruction</p>
+                </a>
+
+                <a href="area4.html" class="area-item">
+                    <img src="./picture/dof.png" alt="Area 4">
+                    <h3>AREA IV</h3>
+                    <p>Support to Students</p>
+                </a>
+
+                <a href="area5.html" class="area-item">
+                    <img src="./picture/dof.png" alt="Area 5">
+                    <h3>AREA V</h3>
+                    <p>Research</p>
+                </a>
+
+                <a href="area6.html" class="area-item">
+                    <img src="./picture/dof.png" alt="Area 6">
+                    <h3>AREA VI</h3>
+                    <p>Extension and Community Involvement</p>
+                </a>
+
+                <a href="area7.html" class="area-item">
+                    <img src="./picture/dof.png" alt="Area 7">
+                    <h3>AREA VII</h3>
+                    <p>Library</p>
+                </a>
+
+                <a href="area8.html" class="area-item">
+                    <img src="./picture/dof.png" alt="Area 8">
+                    <h3>AREA VIII</h3>
+                    <p>Physical Plant and Facilities</p>
+                </a>
+
+                <a href="area9.html" class="area-item">
+                    <img src="./picture/dof.png" alt="Area 9">
+                    <h3>AREA IX</h3>
+                    <p>Laboratories</p>
+                </a>
+
+                <a href="area10.html" class="area-item">
+                    <img src="./picture/dof.png" alt="Area 10">
+                    <h3>AREA X</h3>
+                    <p>Administration</p>
+                </a>
+
+            </div>
+        </div>
+         
+    </section>
+
+    <footer class="footer-grid">
+      <!-- left column: two stacked photos -->
+      <div class="left-stack">
+        <img src="./picture/gt.jpg" alt="Group top" class="stack-img top">
+        <img src="./picture/gt2.jpg" alt="Group bottom" class="stack-img bottom">
+      </div>
+
+      <!-- center column: text + overlappi  ng main logo -->
+      <div class="center-content">
+          <div class="center-text">
+              <h3>DEPARTMENT OF FISHERIES</h3>
+              <h1><span class="big-letter">P</span>illar of <span class="big-letter">E</span>xcellence</h1>
+              <h4>BACHELOR OF FISHERIES</h4>
+
+              <div class="contact-info">
+                  <p>Contact us:</p>
+                  <div class="contact-icons">
+                      <!-- Facebook -->
+                      <a href="#" class="icon-btn" aria-label="Facebook">
+                          <svg width="22" height="22" viewBox="0 0 320 512" fill="white">
+                          <path d="M279.14 288l14.22-92.66h-88.91V127.33c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72V195.3H22.89V288h81.39v224h100.2V288z"/>
+                          </svg>
+                      </a>
+
+                      <!-- Instagram -->
+                      <a href="#" class="icon-btn" aria-label="Instagram">
+                          <svg width="22" height="22" viewBox="0 0 448 512" fill="white">
+                          <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9S160.5 370.8 224.1 370.8 339 319.5 339 255.9 287.7 141 224.1 141zm0 186.6c-39.6 0-71.8-32.2-71.8-71.7 0-39.6 32.2-71.8 71.8-71.8 39.5 0 71.7 32.2 71.7 71.8 0 39.5-32.2 71.7-71.7 71.7zm146.4-194.3c0 14.9-12 26.9-26.9 26.9-14.9 0-26.9-12-26.9-26.9s12-26.9 26.9-26.9 26.9 12 26.9 26.9zM398.8 80c-7.8-20.7-24.2-37.1-44.9-44.9C327.4 24 278.5 24 224 24s-103.4 0-129.9 11.1c-20.7 7.8-37.1 24.2-44.9 44.9C38 106.5 38 155.4 38 210s0 103.5 11.1 130c7.8 20.7 24.2 37.1 44.9 44.9C120.6 396 169.5 396 224 396s103.4 0 129.9-11.1c20.7-7.8 37.1-24.2 44.9-44.9 11.1-26.5 11.1-75.4 11.1-130s0-103.5-11.1-130z"/>
+                          </svg>
+                      </a>
+
+                      <!-- TikTok -->
+                      <a href="#" class="icon-btn" aria-label="TikTok">
+                          <svg width="22" height="22" viewBox="0 0 448 512" fill="white">
+                          <path d="M448 209.9a210.1 210.1 0 0 1-122.3-39.8v181.7a160 160 0 1 1-137.9-158.3v89.4a71.2 71.2 0 1 0 56.9 69.4V0h80.9a121.5 121.5 0 0 0 1.9 22.2 122.2 122.2 0 0 0 53.8 80.1A121.5 121.5 0 0 0 448 133.6z"/>
+                          </svg>
+                      </a>
+
+                      <!-- Email -->
+                      <a href="mailto:someone@example.com" class="icon-btn" aria-label="Email">
+                          <svg width="22" height="22" viewBox="0 0 512 512" fill="white">
+                              <path d="M502.3 190.8 327.4 338.3a39.8 39.8 0 0 1-51 0L9.7 190.8A39.8 39.8 0 0 1 32 112h448a39.8 39.8 0 0 1 23 78.8z"/>
+                          </svg>
+                      </a>
+                      
+
+                  </div>
+              </div>
+          </div>  
+      </div>
+
+      <!-- right column: big faint watermark logo -->
+      <div class="right-watermark">
+        <img src="./picture/dof.png" alt="Watermark Logo">
+      </div>
+    </footer>
+
+        
+
+
+
+  <script src="script.js"></script>
+
+  <!--Footer animation-->
+  <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            }
+            });
+        });
+
+        const hiddenElements = document.querySelectorAll('.fade-up, .fade-in');
+        hiddenElements.forEach(el => observer.observe(el));
+  </script>
+  <script>
+  const video = document.getElementById("bpedVideo");
+  const playButton = document.getElementById("playButton");
+  const wrapper = document.getElementById("videoWrapper");
+
+  let hasInteracted = false; // to unmute on first click
+
+  // Auto-hide play icon on autoplay
+  video.addEventListener("play", () => {
+    playButton.style.opacity = "0";
+  });
+
+  // Show icon again when video is paused
+  video.addEventListener("pause", () => {
+    playButton.style.opacity = "1";
+  });
+
+  // Click to toggle play/pause
+  wrapper.addEventListener("click", () => {
+    if (!hasInteracted) {
+      // Unmute on first user interaction
+      video.muted = false;
+      hasInteracted = true;
+    }
+
+    if (video.paused) {
+      video.play();
+    } else {
+      video.pause();
+    }
+  });
+
+  // Optional fallback to hide icon after 1s if autoplay works
+  setTimeout(() => {
+    if (!video.paused) {
+      playButton.style.opacity = "0";
+    }
+  }, 1000);
+</script>
+<script>
+  window.onscroll = function() {
+    if (window.pageYOffset > sticky) {
+      navbar.style.position = "fixed";
+      navbar.style.top = "0";
+      navbar.style.width = "100%";
+    } else {
+      navbar.style.position = "relative";
+    }
+  };
+</script>
+
+
+</body>
+</html>

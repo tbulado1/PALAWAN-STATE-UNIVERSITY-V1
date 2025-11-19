@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Palawan State University - CTE</title>
+  <link rel="stylesheet" href="../css/a4style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap JS (for dropdown) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&display=swap" rel="stylesheet">
+     <link rel="icon" type="image/x-icon" href="../picture/palawan.png">
+</head>
+<style>
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  position: relative;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #356608;
+  padding: 8px 12px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #356608;
+  min-width: 150px;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+  border-radius: 4px;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 8px 12px;
+  color: #78e24e;
+}
+
+.dropdown-content a:hover {
+  background-color: #356608;
+}
+
+/* Show dropdown on hover */
+.nav-links li:hover .dropdown-content {
+  display: block;
+}
+
+</style>
+<body>
+    
+ <nav style="width: auto; padding: 20px; display: flex; align-items: center; justify-content: space-between;">
+  
+  <!-- Logo on the left -->
+  <div class="logo">
+    <a href="#home">
+      <img src="../picture/dof.png" alt="Logo" style="height: 50px;">
+    </a>
+  </div>
+
+  <!-- Navigation links -->
+  <ul class="nav-links" style="display: flex; list-style: none; gap: 10px;">
+        <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a></li>
+        <!-- Dropdown for Area A -->
+        <li class="nav-item dropdown">
+          
+            <a 
+            class="nav-link dropdown-toggle" 
+            href="#" 
+            id="areaDropdown" 
+            role="button" 
+            data-bs-toggle="dropdown" 
+            aria-expanded="false"
+            >
+           Areas
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="areaDropdown" >
+              
+            <li><a class="dropdown-item" href="#areas">A</a></li>
+            <li><a class="dropdown-item" href="#areas-b">B</a></li>
+            <li><a class="dropdown-item" href="#areas-c">C</a></li>
+            </ul>
+        </li>
+ </ul>
+
+  <!-- Login dropdown 
+  <ul class="navbar-nav ms-auto">
+        <li class="nav-item dropdown">
+            <a 
+            class="nav-link dropdown-toggle text-white" 
+            style="background-color: green; border-radius: 100px; padding: 10px;"
+            href="#" 
+            id="userDropdown" 
+            role="button" 
+            data-bs-toggle="dropdown" 
+            aria-expanded="false"
+            >
+            Juan Cruz
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+            <li><a class="dropdown-item" href="#">Change Nickname</a></li>
+            <li><a class="dropdown-item" href="#">Change Password</a></li>
+            <li><a class="dropdown-item" href="../index.html">Logout</a></li>
+            </ul>
+        </li>
+    </ul>-->
+</nav>
+
+
+  <!-- Home Section -->
+  <section id="home" class="content-section">
+    <div class="logo-section">
+      <img src="../picture/dof.png" alt="Logo 1" class="logo-small">
+      <img src="../picture/palawan.png" alt="Logo 2" class="logo-large">
+      <img src="../picture/dof.png" alt="Logo 3" class="logo-small">
+    </div>  
+    <div class="welcome-text">
+      <h1>WELCOME</h1>
+      <h2>PALAWAN STATE UNIVERSITY - LINAPACAN</h2>
+      <h3><span class="green">College of Community Resource Development</span></h3>
+      <p>Department of Fisheries</p>     
+      <h4>Bachelor of Science in Fisheries
+</h4>
+    </div>
+    <div class="faculty-photo">
+ <img src="../picture/1.jpg" alt="Faculty Group Photo" />
+    </div>
+  </section>
+
+  <!-- CTE Section -->
+  <section id="area1" class="content-section">
+      <div class="areas-container">
+        <div class="faculty-photo">
+     <img src="../picture/palawan.jpg" alt="Faculty Group Photo" />
+        </div>
+        <div class="area-1">
+          <h1>AREA IV</h1>
+        </div>
+        <div class="area-v">
+          <h1>Support to Students</h1>
+        </div>
+      </div>
+        
+  </section>
+
+<!-- Area A -->
+  <section id="areas" class="content-section">
+      <div class="areas-container">
+          <h2 class="areas-title">A. Students Service Program</h2>
+          <div class="areas-grid">
+
+              <a href="https://docs.google.com/document/d/1Bn2phBLTl6mb1tp76nEI-KO9euffvwl4/edit?usp=drive_link&ouid=114274002786698236116&rtpof=true&sd=true" class="area-item">
+                  <img src="../picture/dof.png" alt="Area 1">
+                  <h3>A.1. A Copy of the objectives of the SSP.</h3>
+              </a>
+
+              <a href="https://docs.google.com/document/d/1LYQHyJxiXLE-xopRwt1mvqXJNsM1IFJA/edit?usp=drive_link&ouid=114274002786698236116&rtpof=true&sd=true" class="area-item">
+                  <img src="../picture/dof.png" alt="Area 2">
+                  <h3>A.2. Organizational Chart of the SSP</h3>
+              
+              </a>
+
+              <a href="https://docs.google.com/document/d/1QuaBCQhbEP5erhYxM6J8Wxz-DbV-dkpr/edit?usp=drive_link&ouid=114274002786698236116&rtpof=true&sd=true" class="area-item">
+                  <img src="../picture/dof.png" alt="Area 3">
+                  <h3>A.3. Functional Chart of the SSP. </h3>
+                
+              </a>
+
+              <a class="area-item">
+                  <img src="../picture/dof.png" alt="Area 4">
+                  <h3>A.4. Profile of the SSP staff</h3>
+                 
+              </a>
+
+              <a  class="area-item">
+                  <img src="../picture/dof.png" alt="Area 5">
+                  <h3>A.5. Copy of the SSP Master Plan</h3>
+                 
+              </a>
+
+             <a href="https://docs.google.com/document/d/1QuaBCQhbEP5erhYxM6J8Wxz-DbV-dkpr/edit?usp=drive_link&ouid=114274002786698236116&rtpof=true&sd=true" class="area-item">
+               
+                  <img src="../picture/dof.png" alt="Area 6">
+                  <h3> A.6. Evaluation program to assess the effectiveness of the SSP. </h3>
+              </a>
+
+              <a class="area-item">
+                  <img src="../picture/dof.png" alt="Area 7">
+                  <h3>A.7. Inventory of physical facilities, equipment, supplies and materials for the SSP.</h3>
+                
+              </a>
+
+
+          </div>
+      </div>
+         
+    </section>
+
+    <!-- Area b -->
+    <section id="areas-b" class="content-section">
+      <div class="areas-container">
+          <h2 class="areas-title">B. Admission and Retention.</h2>
+          <div class="areas-grid">
+            
+              <a href="https://docs.google.com/document/d/1fMxnmc34nvk5ZIoE_NnviAAVqv1_msQP/edit?usp=drive_link&ouid=114274002786698236116&rtpof=true&sd=true" class="area-item">
+                  <img src="../picture/dof.png" alt="Area 1">
+                  <h3>B. Admission and Retention.</h3>
+                  
+              </a>
+              <a href="https://docs.google.com/document/d/1DXFE989pn1dgvj9MFjlwOPgN1jOTOdZ2/edit?usp=drive_link&ouid=114274002786698236116&rtpof=true&sd=true" class="area-item">
+                  <img src="../picture/dof.png" alt="Area 1">
+                  <h3>B.1. Bulletin of Information</h3>
+                  
+              </a>
+
+              <a href="https://drive.google.com/file/d/1uioLUL-huvKe6LRAMnGDzpygBY8UARXG/view?usp=drive_link" class="area-item">
+                  <img src="../picture/dof.png" alt="Area 2">
+                  <h3>B.2. Student Handbook.</h3>
+                 
+              </a>
+
+              <a  class="area-item">
+                  <img src="../picture/dof.png" alt="Area 3">
+                  <h3>B.3. Data on student admission (enrolment trends, drop-out rate, transferees, course shifters, etc.)</h3>
+                  
+              </a>
+
+          </div>
+      </div> 
+    </section>
+
+     <!-- Area C -->
+    <section id="areas-c" class="content-section">
+      <div class="areas-container">
+          <h2 class="areas-title">C. Congruence and Implementation</h2>
+          <div class="areas-grid">
+
+              <a href="https://docs.google.com/document/d/1iz1emr8c4YpcGOYGf5YKSbEYSXZRCgQl/edit?usp=drive_link&ouid=114274002786698236116&rtpof=true&sd=true" class="area-item">
+                  <img src="../picture/dof.png" alt="Area 1">
+                  <h3> C.1. Profile of the Guidance Counseling Head</h3>
+                  
+              </a>
+
+              <a href="https://docs.google.com/document/d/1uGvIya9Wc3CW3RLlj0-Oeqs2Ix4o6xmu/edit?usp=drive_link&ouid=114274002786698236116&rtpof=true&sd=true" class="area-item">
+                  <img src="../picture/dof.png" alt="Area 2">
+                  <h3>C.2. Updated Student Profiles</h3>
+                  
+              </a>
+
+              <a href="https://docs.google.com/document/d/1fvdeAru0_MtPZDk60WFTPU-tdY3gePpd/edit?usp=drive_link&ouid=114274002786698236116&rtpof=true&sd=true" class="area-item">
+                  <img src="../picture/dof.png" alt="Area 3">
+                  <h3>C.3.Policies of the confidentiality of students records</h3>
+                  
+              </a>
+              <a href="https://docs.google.com/document/d/1HUKagTF8VaNsXjH5w38iw9OBOsxhx3Rr/edit?usp=drive_link&ouid=114274002786698236116&rtpof=true&sd=true" class="area-item">
+                  <img src="../picture/dof.png" alt="Area 3">
+                  <h3>C.4. A copy of Testing programss</h3>
+                  
+              </a>
+              <a  class="area-item">
+                  <img src="../picture/dof.png" alt="Area 3">
+                  <h3> C.5. List of tests and evaluative tools used in Guidance and Counseling Services.</h3>
+                  
+              </a>
+              <a href="https://docs.google.com/document/d/1AmJ5VAUYTqnX1L3t54CG1b5xaUx8lTf_/edit?usp=drive_link&ouid=114274002786698236116&rtpof=true&sd=true" class="area-item">
+                  <img src="../picture/dof.png" alt="Area 3">
+                  <h3> C.6. List of students who availed services of the counseling service</h3>
+                  
+              </a>
+              <a href="https://docs.google.com/document/d/18TCs_GC97Id4ZHeiV1jGAQxaPSQICp9q/edit?usp=drive_link&ouid=114274002786698236116&rtpof=true&sd=true" class="area-item">
+                  <img src="../picture/dof.png" alt="Area 3">
+                  <h3> C.7. Sample counseling referral form.</h3>
+                  
+              </a>
+              <a  class="area-item">
+                  <img src="../picture/dof.png" alt="Area 3">
+                  <h3>C.8. List of prospective employers of graduates of a particular program.</h3>
+                  
+              </a>
+              <a  class="area-item">
+                  <img src="../picture/dof.png" alt="Area 3">
+                  <h3>C.9. Sample of letters of employers inviting graduates of aparticular program to apply.</h3>
+                  
+              </a>
+              <a href="https://docs.google.com/document/d/1_PPcpW0GCgnOPBRqCyxNJYHvZIiHzuGD/edit?usp=drive_link&ouid=114274002786698236116&rtpof=true&sd=true" class="area-item">
+                  <img src="../picture/dof.png" alt="Area 3">
+                  <h3> C.10. Alumni Directory and Officers of the Alumni Association.</h3>
+                  
+              </a><a  class="area-item">
+                  <img src="../picture/dof.png" alt="Area 3">
+                  <h3> C.11. Linkage/s established with industries and prospective employer/s</h3>
+                  
+              </a>
+              </a><a  class="area-item">
+                  <img src="../picture/dof.png" alt="Area 3">
+                  <h3>C.12. Copy of the instrument to evaluate the guidance program.</h3>
+                  
+              </a>
+
+          </div>
+      </div> 
+    </section>
+    <!-- Area D -->
+  <section id="areas" class="content-section">
+      <div class="areas-container">
+          <h2 class="areas-title">D. Other Students Services</h2>
+          <div class="areas-grid">
+
+              <a href="https://docs.google.com/document/d/1Bn2phBLTl6mb1tp76nEI-KO9euffvwl4/edit?usp=drive_link&ouid=114274002786698236116&rtpof=true&sd=true " class="area-item">
+                  <img src="../picture/dof.png" alt="Area 1">
+                  <h3>D.1. Copies of the Health Services Program. </h3>
+              </a>
+
+              <a href="https://docs.google.com/document/d/1LYQHyJxiXLE-xopRwt1mvqXJNsM1IFJA/edit?usp=drive_link&ouid=114274002786698236116&rtpof=true&sd=true" class="area-item">
+                  <img src="../picture/dof.png" alt="Area 2">
+                  <h3>D.2. Profile of the Medical/Dental Staff.</h3>
+              
+              </a>
+
+              <a href="https://docs.google.com/document/d/1QuaBCQhbEP5erhYxM6J8Wxz-DbV-dkpr/edit?usp=drive_link&ouid=114274002786698236116&rtpof=true&sd=true" class="area-item">
+                  <img src="../picture/dof.png" alt="Area 3">
+                  <h3>D.3. Records of the Students who availed of Medical/DentalServices. </h3>
+                
+              </a>
+
+          </div>
+      </div>
+         
+    </section>
+      <!-- Area D Food -->
+    <section id="areas-b" class="content-section">
+      <div class="areas-container">
+          <h2 class="areas-title">D.Food Services</h2>
+          <div class="areas-grid">
+            
+              <a  class="area-item">
+                  <img src="../picture/dof.png" alt="Area 1">
+                  <h3>D.4 Copy of sanitary permit for canteen operation.</h3>
+                  
+              </a>
+              <a  class="area-item">
+                  <img src="../picture/dof.png" alt="Area 1">
+                  <h3>D.5. Health Certificates of the canteen staff and food handlers. </h3>
+                  
+              
+
+          </div>
+      </div> 
+    </section>
+    <!-- Area D Sports Development Program-->
+    <section id="areas-c" class="content-section">
+      <div class="areas-container">
+          <h2 class="areas-title">D. Sports Development Program</h2>
+          <div class="areas-grid">
+
+              <a href="https://docs.google.com/document/d/1xxl4hTlwhKdPcxo6McGFqNEmFJWS7vXk/edit?usp=drive_link&ouid=114274002786698236116&rtpof=true&sd=true " class="area-item">
+                  <img src="../picture/dof.png" alt="Area 1">
+                  <h3>  D.6. Policies on the selection of athletes</h3>
+                  
+              </a>
+
+              <a href="https://docs.google.com/document/d/1uGvIya9Wc3CW3RLlj0-Oeqs2Ix4o6xmu/edit?usp=drive_link&ouid=114274002786698236116&rtpof=true&sd=true" class="area-item">
+                  <img src="../picture/dof.png" alt="Area 2">
+                  <h3>D.7. Budget allocation for sports development.</h3>
+                  
+              </a>
+
+              <a href="https://docs.google.com/document/d/1fvdeAru0_MtPZDk60WFTPU-tdY3gePpd/edit?usp=drive_link&ouid=114274002786698236116&rtpof=true&sd=true" class="area-item">
+                  <img src="../picture/dof.png" alt="Area 3">
+                  <h3>D.8. Inventory of facilities, equipment, supplies and materials provided to the Sports Services Units.</h3>
+                  
+              </a>
+              <a href="https://docs.google.com/document/d/1HUKagTF8VaNsXjH5w38iw9OBOsxhx3Rr/edit?usp=drive_link&ouid=114274002786698236116&rtpof=true&sd=true" class="area-item">
+                  <img src="../picture/dof.png" alt="Area 3">
+                  <h3> D.9. Evidence of monitoring and evaluation of sports activities.</h3>
+                  
+              </a>
+              <a href="https://docs.google.com/document/d/1cfWWwTz-TsnErG6Ozyxq5DraLa5Dix0C/edit?usp=drive_link&ouid=114274002786698236116&rtpof=true&sd=true" class="area-item">
+               
+                  <img src="../picture/dof.png" alt="Area 3">
+                  <h3>  D.10. Policies governing student publication. .</h3>
+                  
+              </a>
+              <a href="https://docs.google.com/document/d/1IU2AiTuWu2-iXEbOFhyiOYeKuaEw50IK/edit?usp=drive_link&ouid=114274002786698236116&rtpof=true&sd=true" class="area-item">
+                  <img src="../picture/dof.png" alt="Area 3">
+                  <h3> D.11. Composition of the Editorial Board, including advisers.</h3>
+                  
+              </a>
+              <a href="https://docs.google.com/document/d/18TCs_GC97Id4ZHeiV1jGAQxaPSQICp9q/edit?usp=drive_link&ouid=114274002786698236116&rtpof=true&sd=true" class="area-item">
+                  <img src="../picture/dof.png" alt="Area 3">
+                  <h3> D.12. Copies of the school paper published</h3>
+                  
+              </a>
+              <a href="https://docs.google.com/document/d/1bH9SJYM3loAfYe_7_xruIBIsOafkRii5/edit?usp=drive_link&ouid=114274002786698236116&rtpof=true&sd=true" class="area-item">
+               
+                  <img src="../picture/dof.png" alt="Area 3">
+                  <h3> D.13. Profile of the school paper’s advisers. </h3>
+                  
+              </a>
+        <a href="https://docs.google.com/document/d/1Ll4foqHoSQxrhz2uiky-213_Vy-oD2IR/edit?usp=drive_link&ouid=114274002786698236116&rtpof=true&sd=true" class="area-item">
+              
+                  <img src="../picture/dof.png" alt="Area 3">
+                  <h3> D.14. Inventory of facilities, equipment, supplies and materials for the Student Publication Units..</h3>
+                  
+              </a>
+
+          </div>
+      </div> 
+    </section>
+    <!-- Area D Socio-Cultural Development Program -->
+  <section id="areas" class="content-section">
+      <div class="areas-container">
+          <h2 class="areas-title"> D. Socio-Cultural Development Program</h2>
+          <div class="areas-grid">
+
+              <a href="https://docs.google.com/document/d/1Szg8D_zV7I8bMSDrrEoEkYHjzd2HIjwh/edit?usp=drive_link&ouid=114274002786698236116&rtpof=true&sd=true" class="area-item">
+                  <img src="../picture/dof.png" alt="Area 1">
+                  <h3>D.15. A Copy of the Socio-Cultural Development Program.  </h3>
+              </a>
+
+              <a href="https://docs.google.com/document/d/1RicQBXSFo__gaR01uEgObxWDkTDqWPNI/edit?usp=drive_link&ouid=114274002786698236116&rtpof=true&sd=true" class="area-item">
+                  <img src="../picture/dof.png" alt="Area 2">
+                  <h3>D.16. Schedule of Socio-Cultural activities regularly conducted.</h3>
+              
+              </a>
+
+              <a href="https://docs.google.com/document/d/1bvyp2YLcpbn6CuxtC7WFqdoSooYtaa3g/edit?usp=drive_link&ouid=114274002786698236116&rtpof=true&sd=true" class="area-item">
+                  <img src="../picture/dof.png" alt="Area 3">
+                  <h3> D.17. Copy of the financial assistance program ( scholarship, grantin-aid, students loans, attendance to seminars, etc </h3>
+                
+              </a>
+               <a href="https://docs.google.com/document/d/1w-uM7z_PrhGLt3_pDddgPhMqDhPchQxG/edit?usp=drive_link&ouid=114274002786698236116&rtpof=true&sd=true" class="area-item">
+                  <img src="../picture/dof.png" alt="Area 3">
+                  <h3>  D.18. List of incentives and privileges to varsity athletes and member of cultural group </h3>
+                
+              </a>
+
+          </div>
+      </div>
+         
+    </section>
+    <!-- Area D Housing Services (Optional)  -->
+    <section id="areas-b" class="content-section">
+      <div class="areas-container">
+          <h2 class="areas-title">D.Housing Services (Optional)</h2>
+          <div class="areas-grid">
+
+              <a class="area-item">
+                  <img src="../picture/dof.png" alt="Area 1">
+                  <h3> D.19. Policies on the operation of Student Dormitories. </h3>
+              </a>
+
+              <a class="area-item">
+                  <img src="../picture/dof.png" alt="Area 2">
+                  <h3> D.20. Profile of the Dormitory Head and Staff.</h3>
+              
+              </a>
+
+              <a  class="area-item">
+                  <img src="../picture/dof.png" alt="Area 3">
+                  <h3> D.21. Copy of Dormitory Rules and Regulations</h3>
+                
+              </a>
+
+              <a class="area-item">
+                  <img src="../picture/dof.png" alt="Area 4">
+                  <h3>D.22. Report on the monitoring and evaluation of private boarding house</h3>
+                 
+              </a>
+
+
+
+          </div>
+      </div>
+         
+    </section>  
+     <!-- Area E -->
+    <section id="areas-c" class="content-section">
+      <div class="areas-container">
+          <h2 class="areas-title">E. Graduation Requirements.</h2>
+          <div class="areas-grid">
+
+              <a href="https://docs.google.com/document/d/1ULIJCQOBl0kSsN1v5EMYbkpkAJ_4lLed/edit?usp=drive_link&ouid=114274002786698236116&rtpof=true&sd=true" class="area-item">
+                  <img src="../picture/dof.png" alt="Area 1">
+                  <h3> E.1.1. List of the scholarship available;</h3>
+                  
+              </a>
+
+              <a href="https://docs.google.com/document/d/10MvEPC5dFyAoaLxR6jyU1KF_DSFoLJAD/edit?usp=drive_link&ouid=114274002786698236116&rtpof=true&sd=true" class="area-item">
+                  <img src="../picture/dof.png" alt="Area 2">
+                  <h3>E.1.2. List of schools privileges of scholars(stipend, free or discounted tuition fees, food allowance, etc.);</h3>
+                  
+              </a>
+
+              <a href="https://docs.google.com/document/d/1_Pxhxv5ZCgRZGgs1xMT39Xo2Tq9tTiFX/edit?usp=drive_link&ouid=114274002786698236116&rtpof=true&sd=true" class="area-item">
+                  <img src="../picture/dof.png" alt="Area 3">
+                  <h3>E.1.3. Policies on the selection and retention of scholarship/grantees in different categories;</h3>
+                  
+              </a>
+              <a href="https://docs.google.com/document/d/1EY6j33jAqfbaIIHy3xD7oOhQMWRkbcpF/edit?usp=drive_link&ouid=114274002786698236116&rtpof=true&sd=true" class="area-item">
+                  <img src="../picture/dof.png" alt="Area 3">
+                  <h3> E.1.4. A mechanism for funds generation from sponsors, benevolent individuals, agencies, institutions, and organizations; and</h3>
+                  
+              </a>
+              <a href="https://docs.google.com/document/d/1wPCDiEQ_2bkboqkdPHSazhP9IBu05Zj5/edit?usp=drive_link&ouid=114274002786698236116&rtpof=true&sd=true" class="area-item">
+               
+                  <img src="../picture/dof.png" alt="Area 3">
+                  <h3>E.1.5. System of monitoring a grantee/scholar’s academic status.</h3>
+                  
+              </a>
+              <a href="https://docs.google.com/document/d/1iF_4WudVyPRTJYWDEZ412Rwzorz0Q92X/edit?usp=drive_link&ouid=114274002786698236116&rtpof=true&sd=true" class="area-item">
+                  <img src="../picture/dof.png" alt="Area 3">
+                  <h3>E.2 Copy of the orientation program for scholars and grantees </h3>
+                  
+              </a>
+              
+
+          </div>
+      </div> 
+    </section>
+    <!-- Area F -->
+  <section id="areas" class="content-section">
+      <div class="areas-container">
+          <h2 class="areas-title">F. Co-curricular and Extra-curricular Program</h2>
+          <div class="areas-grid">
+
+              <a href="https://docs.google.com/document/d/1La6nMcCU5SxXizpJVkZ3M_OfrEOkwqm2/edit?usp=drive_link&ouid=114274002786698236116&rtpof=true&sd=true" class="area-item">
+                  <img src="../picture/dof.png" alt="Area 1">
+                  <h3>F.1. List of recognized students organizations, including their advisers. </h3>
+              </a>
+
+              <a href="https://docs.google.com/document/d/1QHEkcSWywtvYf3R9n8QdbKIQVbQfR1vX/edit?usp=drive_link&ouid=114274002786698236116&rtpof=true&sd=true" class="area-item">
+                  <img src="../picture/dof.png" alt="Area 2">
+                  <h3>F.2. Sample of Constitution and By-Laws of student organizations.</h3>
+              
+              </a>
+
+              <a href="https://docs.google.com/document/d/1QJP6wVby2J1ieqpMgmuf28OyX1vTCMNz/edit?usp=drive_link&ouid=114274002786698236116&rtpof=true&sd=true" class="area-item">
+                  <img src="../picture/dof.png" alt="Area 3">
+                  <h3> F.3. List of co-curricular and extra-curricular activities including relevant information’s. </h3>
+                
+              </a>
+               <a href="https://docs.google.com/document/d/1fKu5_52tdT5AiX29iT9WnRuLmimzdEqQ/edit?usp=drive_link&ouid=114274002786698236116&rtpof=true&sd=true" class="area-item">
+                  <img src="../picture/dof.png" alt="Area 3">
+                  <h3>  F.4. A system of incentives, awards/recognition for outstanding achievement in co-curricular and extra-curricular activities.</h3>
+                
+              </a>
+              <a href="https://docs.google.com/document/d/1cWPedXVMWn1R3aSoXdZkLT7QnelAaegL/edit?usp=drive_link&ouid=114274002786698236116&rtpof=true&sd=true" class="area-item">
+                  <img src="../picture/dof.png" alt="Area 3">
+                  <h3>F.5. Sample of Accomplishments Reports of recognized students organizations.</h3>
+                
+              </a>
+
+          </div>
+      </div>
+         
+    </section>
+
+    
+
+    <footer class="footer-grid">
+      <!-- left column: two stacked photos -->
+      <div class="left-stack">
+        <img src="../picture/gt.jpg" alt="Group top" class="stack-img top">
+        <img src="../picture/gt2.jpg" alt="Group bottom" class="stack-img bottom">
+      </div>
+
+      <!-- center column: text + overlappi  ng main logo -->
+      <div class="center-content">
+          <div class="center-text">
+              <h3>DEPARTMENT OF FISHERIES</h3>
+              <h1><span class="big-letter">P</span>illar of <span class="big-letter">E</span>xcellence</h1>
+              <h4>Bachelor of Science in Fisheries
+</h4>
+
+              <div class="contact-info">
+                  <p>Contact us:</p>
+                  <div class="contact-icons">
+                      <!-- Facebook -->
+                      <a href="#" class="icon-btn" aria-label="Facebook">
+                          <svg width="22" height="22" viewBox="0 0 320 512" fill="white">
+                          <path d="M279.14 288l14.22-92.66h-88.91V127.33c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72V195.3H22.89V288h81.39v224h100.2V288z"/>
+                          </svg>
+                      </a>
+
+                      <!-- Instagram -->
+                      <a href="#" class="icon-btn" aria-label="Instagram">
+                          <svg width="22" height="22" viewBox="0 0 448 512" fill="white">
+                          <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9S160.5 370.8 224.1 370.8 339 319.5 339 255.9 287.7 141 224.1 141zm0 186.6c-39.6 0-71.8-32.2-71.8-71.7 0-39.6 32.2-71.8 71.8-71.8 39.5 0 71.7 32.2 71.7 71.8 0 39.5-32.2 71.7-71.7 71.7zm146.4-194.3c0 14.9-12 26.9-26.9 26.9-14.9 0-26.9-12-26.9-26.9s12-26.9 26.9-26.9 26.9 12 26.9 26.9zM398.8 80c-7.8-20.7-24.2-37.1-44.9-44.9C327.4 24 278.5 24 224 24s-103.4 0-129.9 11.1c-20.7 7.8-37.1 24.2-44.9 44.9C38 106.5 38 155.4 38 210s0 103.5 11.1 130c7.8 20.7 24.2 37.1 44.9 44.9C120.6 396 169.5 396 224 396s103.4 0 129.9-11.1c20.7-7.8 37.1-24.2 44.9-44.9 11.1-26.5 11.1-75.4 11.1-130s0-103.5-11.1-130z"/>
+                          </svg>
+                      </a>
+
+                      <!-- TikTok -->
+                      <a href="#" class="icon-btn" aria-label="TikTok">
+                          <svg width="22" height="22" viewBox="0 0 448 512" fill="white">
+                          <path d="M448 209.9a210.1 210.1 0 0 1-122.3-39.8v181.7a160 160 0 1 1-137.9-158.3v89.4a71.2 71.2 0 1 0 56.9 69.4V0h80.9a121.5 121.5 0 0 0 1.9 22.2 122.2 122.2 0 0 0 53.8 80.1A121.5 121.5 0 0 0 448 133.6z"/>
+                          </svg>
+                      </a>
+
+                      <!-- Email -->
+                      <a href="mailto:someone@example.com" class="icon-btn" aria-label="Email">
+                          <svg width="22" height="22" viewBox="0 0 512 512" fill="white">
+                              <path d="M502.3 190.8 327.4 338.3a39.8 39.8 0 0 1-51 0L9.7 190.8A39.8 39.8 0 0 1 32 112h448a39.8 39.8 0 0 1 23 78.8z"/>
+                          </svg>
+                      </a>
+                      
+
+                  </div>
+              </div>
+          </div>  
+      </div>
+
+      <!-- right column: big faint watermark logo -->
+      <div class="right-watermark">
+        <img src="../picture/dof.png" alt="Watermark Logo">
+      </div>
+    </footer>
+        
+
+
+
+  <script src="script.js"></script>
+
+  <!--Footer animation-->
+  <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            }
+            });
+        });
+
+        const hiddenElements = document.querySelectorAll('.fade-up, .fade-in');
+        hiddenElements.forEach(el => observer.observe(el));
+  </script>
+  <script>
+</script>
+
+
+</body>
+</html>

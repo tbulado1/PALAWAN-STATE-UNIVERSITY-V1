@@ -1,0 +1,206 @@
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+
+.footer-grid{
+  display:grid;
+  grid-template-columns: 36% 0% 65%; /* left stack, center, right watermark */
+  align-items:stretch;
+  width:100%;
+  min-height:460px;            /* adjust to your needed height */
+  background:#FAF7EA;
+  position:relative;
+  padding:18px;                /* outer padding like your screenshot */
+}
+
+/* LEFT: stacked photos */
+.left-stack {
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  margin-left: 5rem;
+  gap:12px;
+  padding-right:-25px;
+}
+.stack-img{
+  width:100%;
+  height: calc(50vh - 20px);   /* each image height - fine tune */
+  object-fit:cover;
+  border-radius:6px;
+  opacity:0.95;
+  box-shadow: 0 0 0 2px rgba(0,0,0,0.03) inset;
+}
+
+/* CENTER: text and the overlapping logo */
+.center-content{
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:20px;
+  margin-top: 20px;
+  margin-left: 200px;
+  z-index:2;              /* above watermark */
+}
+
+.center-text{
+    margin-top: -28rem;
+    margin-left: 35rem;
+}
+
+.center-text h3{
+  font-size:16px;
+  font-weight:700;
+  letter-spacing:1px;
+  margin-bottom:6px;
+}
+.center-text h1{
+  font-size:42px;       /* main title size */
+  margin:4px 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight:700;
+}
+.center-text h4{
+  font-size:13px;
+  margin-top:8px;
+  font-weight:700;
+  letter-spacing:0.6px;
+  text-transform:uppercase;
+}
+
+/* big initials styling (like P and E) */
+.big-letter{
+  font-size:62px;
+  font-weight:900;
+  margin-right:6px;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+
+.contact-info {
+  margin-top: 28px;
+}
+
+.contact-info p {
+  font-size: 20px;
+  margin-bottom: 12px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* container for icons */
+.contact-icons {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+/* black circle buttons */
+.icon-btn {
+  display: inline-flex;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #000;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: transform .15s ease, background .15s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+}
+
+.icon-btn:hover {
+  transform: translateY(-4px) scale(1.06);
+  background: #111;
+}
+
+
+
+
+.icon-btn {
+  display: inline-flex;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #000;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 18px;
+  transition: transform .15s ease, background .15s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+}
+
+.icon-btn i {
+  pointer-events: none; /* let click go to anchor */
+}
+
+/* hover effect */
+.icon-btn:hover {
+  transform: translateY(-4px) scale(1.06);
+  background: #111;
+}
+
+/* darker on active/focus for accessibility */
+.icon-btn:focus, .icon-btn:active {
+  outline: 2px solid rgba(0,0,0,0.12);
+  outline-offset: 3px;
+}
+
+/* main circular logo positioned to overlap between top & bottom left images */
+.main-logo{
+  position:absolute;
+  left:50%;
+  transform:translateX(-50%);
+  /* vertical placement: halfway down the center column but aligned to overlap the stacked images */
+  top:42%;
+  z-index:6;
+  pointer-events:none;
+}
+.main-logo img{
+  width:130px;   /* tune to match original */
+  height:130px;
+  object-fit:contain;
+  border-radius:50%;
+  box-shadow:0 6px 18px rgba(0,0,0,0.08);
+  background:#fff;
+  padding:6px;   /* inner white ring look */
+}
+
+/* RIGHT: large faint watermark */
+.right-watermark{
+  position:relative;
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin-top: -110px;
+  padding-right:100px;
+  
+}
+.right-watermark img{
+  width:1140%;
+  height:80%;
+  
+  opacity:0.14;            /* faint watermark */
+  transform:translateX(8%); /* push slightly to the right like in your photo */
+  pointer-events:none;
+}
+
+/* RESPONSIVE: stack on small screens */
+@media (max-width:900px){
+  .footer-grid{
+    grid-template-columns: 1fr;
+    gap:18px;
+    padding:12px;
+
+  }
+  .left-stack{flex-direction:row; gap:8px}
+  .stack-img{height:200px; width:50%}
+  .center-content{padding-top:18px}
+  .main-logo{top:36%}
+  .right-watermark{display:none} /* hide large watermark on small screens */
+}

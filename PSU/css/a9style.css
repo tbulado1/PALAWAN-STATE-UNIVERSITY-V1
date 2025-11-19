@@ -1,0 +1,740 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: beige;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.37);
+  padding: 10px 50px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(5px);
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-section img {
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.logo-small {
+  height: 60px;
+}
+
+.logo-large {
+  height: 120px;
+}
+
+.logo-section img:hover {
+  transform: scale(1.05);
+}
+
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #1a6503;
+}
+
+/* Section Layout */
+html {
+  scroll-behavior: smooth;
+}
+
+.content-section {
+  min-height: 100vh;
+  width: 100%;
+  padding: 100px 0;
+  top: -70px;
+  text-align: center;
+  display: block;
+  opacity: 1;
+  position: relative;
+  transform: none;
+}
+
+/* Prevent navbar overlap */
+section {
+  scroll-margin-top: 80px;
+}
+
+
+.content-section.active {
+  display: block;
+  opacity: 1;
+  transform: translateX(0);
+  position: relative;
+}
+
+
+.content-section.slide-out-left {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.content-section.slide-in-right {
+  transform: translateX(0);
+  opacity: 1;
+}
+.welcome-text  {
+  margin: auto;
+
+}
+.welcome-text h1 {
+  font-family: "BBH Sans Hegarty", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 10px;
+  font-size: 55px;
+  color: rgb(68, 68, 67);
+}
+
+.welcome-text h2 {
+  font-size: 30px;
+  color: #4e4d4de7;
+  margin-bottom: 20px;
+}
+
+.welcome-text h3 span {
+  background: #23923bd5;
+  color: beige;
+  padding: 20px 8rem;
+  border-radius: 50px;
+  font-size: 25px;
+}
+
+.welcome-text p {
+  font-size: 30px;
+  font-family:'Times New Roman', Times, serif;
+  margin: 20px 0;
+  color: #4e4d4d;
+}
+
+.welcome-text h4 {
+  font-weight: bold;
+  font-size: 30px;
+  font-family:'Times New Roman', Times, serif;
+  margin-top: 10px;
+  color: #4e4d4d;
+}
+
+.faculty-photo {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.faculty-photo img {
+  width: 1100px;
+  height: 450px;
+  border: 15px solid #203b125d;
+  border-radius: 20px;
+}
+span.green {
+  background-color: #23923b;
+}
+
+
+/* HOME SECTION BACKGROUND */
+#home {
+  position: relative;
+  background: url("../picture/dof.png") no-repeat center center/cover; /* Replace with your image */
+  color: #000;
+  min-height: 100vh;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Add transparent overlay */
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(245, 245, 220, 0.836); /* White transparency, adjust 0.6 for more/less transparency */
+  z-index: 0;
+}
+
+/* Ensure content stays on top of overlay */
+#home > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* area A */
+#areas {
+  position: relative;
+  background: url("../palawan.jpg") no-repeat center center/cover; /* your background image */
+  color: rgb(255, 254, 254);
+  text-align: center;
+  padding: 100px 50px;
+  overflow: hidden;
+}
+
+/* Orange transparent overlay */
+#areas::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(73, 239, 231, 0.836);
+  z-index: 0;
+}
+
+/* area B */
+#areas-b {
+  position: relative;
+  background: url("../palawan.jpg") no-repeat center center/cover; /* your background image */
+  color: white;
+  text-align: center;
+  padding: 100px 50px;
+  overflow: hidden;
+}
+
+/* Orange transparent overlay */
+#areas-b::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(135, 138, 138, 0.795);
+  z-index: 0;
+}
+
+/* area C */
+#areas-c{
+  position: relative;
+  background: url("../palawan.jpg") no-repeat center center/cover; /* your background image */
+  color: white;
+  text-align: center;
+  padding: 100px 50px;
+  overflow: hidden;
+}
+
+/* Orange transparent overlay */
+#areas-c::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(221, 221, 221, 0.795);
+  z-index: 0;
+}
+.areas-container {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Title */
+.areas-title {
+  background: #0b60b0;
+  display: inline-block;
+  padding: 15px 60px;
+  border-radius: 0 0 25px 25px;
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 60px;
+}
+
+
+/* Grid layout */
+.areas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 50px;
+  justify-items: center;
+}
+
+/* Each Area Item */
+.area-item {
+  text-decoration: none;
+  color: rgb(247, 246, 246);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.area-item:hover {
+  transform: scale(1.08);
+}
+
+/* Circular logos */
+.area-item img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin-bottom: 15px;
+  background: #fff;
+  transition: transform 0.3s ease;
+}
+
+.area-item:hover img {
+  transform: rotate(5deg) scale(1.1);
+}
+
+/* Text below logo */
+.area-item h3 {
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: rgb(44, 43, 43);
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.area-item p {
+  font-size: 0.95em;
+  color: #f9f9f9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .areas-title {
+    font-size: 2em;
+    padding: 10px 40px;
+  }
+
+  .area-item img {
+    width: 110px;
+    height: 110px;
+  }
+}
+
+
+.highlight {
+  color: #3568b8;
+  font-style: italic;
+}
+
+.subtext {
+  font-style: italic;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.contact-info {
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+.contact-info i {
+  font-size: large;
+  color: #3568b8;
+  margin-right: 8px;
+}
+
+.owl {
+  width: 90px;
+  margin-top: 20px;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Floating animation for the owl */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+/* SCROLL ANIMATIONS */
+.fade-up, .fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.fade-in {
+  transform: scale(0.95);
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-left {
+    flex-direction: column;
+  }
+
+  .footer-right {
+    text-align: center;
+  }
+
+  .footer-bg {
+    width: 90%;
+    height: 200px;
+    opacity: 0.1;
+  }
+
+  .logo {
+    width: 70px;
+  }
+
+  .owl {
+    width: 70px;
+  }
+}
+
+.dropdown-menu {
+  border-radius: 5px; /* Optional: Rounds the corners slightly */
+  padding: 10px;
+  background-color: #23923b;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+
+.footer-grid{
+  display:grid;
+  grid-template-columns: 36% 0% 65%; /* left stack, center, right watermark */
+  align-items:stretch;
+  width:100%;
+  min-height:460px;            /* adjust to your needed height */
+  background:#FAF7EA;
+  position:relative;
+  padding:18px;                /* outer padding like your screenshot */
+}
+
+/* LEFT: stacked photos */
+.left-stack {
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  margin-left: 5rem;
+  gap:12px;
+  padding-right:-25px;
+}
+.stack-img{
+  width:100%;
+  height: calc(50vh - 20px);   /* each image height - fine tune */
+  object-fit:cover;
+  border-radius:6px;
+  opacity:0.95;
+  box-shadow: 0 0 0 2px rgba(0,0,0,0.03) inset;
+}
+
+/* CENTER: text and the overlapping logo */
+.center-content{
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:20px;
+  margin-top: 20px;
+  margin-left: 200px;
+  z-index:2;              /* above watermark */
+}
+
+.center-text{
+    margin-top: -28rem;
+    margin-left: 35rem;
+}
+
+.center-text h3{
+  font-size:16px;
+  font-weight:700;
+  letter-spacing:1px;
+  margin-bottom:6px;
+}
+.center-text h1{
+  font-size:42px;       /* main title size */
+  margin:4px 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight:700;
+}
+.center-text h4{
+  font-size:13px;
+  margin-top:8px;
+  font-weight:700;
+  letter-spacing:0.6px;
+  text-transform:uppercase;
+}
+
+/* big initials styling (like P and E) */
+.big-letter{
+  font-size:62px;
+  font-weight:900;
+  margin-right:6px;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+
+.contact-info {
+  margin-top: 28px;
+}
+
+.contact-info p {
+  font-size: 20px;
+  margin-bottom: 12px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* container for icons */
+.contact-icons {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+/* black circle buttons */
+.icon-btn {
+  display: inline-flex;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #000;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: transform .15s ease, background .15s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+}
+
+.icon-btn:hover {
+  transform: translateY(-4px) scale(1.06);
+  background: #111;
+}
+
+
+
+
+.icon-btn {
+  display: inline-flex;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #000;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 18px;
+  transition: transform .15s ease, background .15s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+}
+
+.icon-btn i {
+  pointer-events: none; /* let click go to anchor */
+}
+
+/* hover effect */
+.icon-btn:hover {
+  transform: translateY(-4px) scale(1.06);
+  background: #111;
+}
+
+/* darker on active/focus for accessibility */
+.icon-btn:focus, .icon-btn:active {
+  outline: 2px solid rgba(0,0,0,0.12);
+  outline-offset: 3px;
+}
+
+/* main circular logo positioned to overlap between top & bottom left images */
+.main-logo{
+  position:absolute;
+  left:50%;
+  transform:translateX(-50%);
+  /* vertical placement: halfway down the center column but aligned to overlap the stacked images */
+  top:42%;
+  z-index:6;
+  pointer-events:none;
+}
+.main-logo img{
+  width:130px;   /* tune to match original */
+  height:130px;
+  object-fit:contain;
+  border-radius:50%;
+  box-shadow:0 6px 18px rgba(0,0,0,0.08);
+  background:#fff;
+  padding:6px;   /* inner white ring look */
+}
+
+/* RIGHT: large faint watermark */
+.right-watermark{
+  position:relative;
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin-top: -110px;
+  padding-right:100px;
+  
+}
+.right-watermark img{
+  width:1140%;
+  height:80%;
+  
+  opacity:0.14;            /* faint watermark */
+  transform:translateX(8%); /* push slightly to the right like in your photo */
+  pointer-events:none;
+}
+
+/* RESPONSIVE: stack on small screens */
+@media (max-width:900px){
+  .footer-grid{
+    grid-template-columns: 1fr;
+    gap:18px;
+    padding:12px;
+
+  }
+  .left-stack{flex-direction:row; gap:8px}
+  .stack-img{height:200px; width:50%}
+  .center-content{padding-top:18px}
+  .main-logo{top:36%}
+  .right-watermark{display:none} /* hide large watermark on small screens */
+}
+.area-v h1{
+  margin: auto;
+  font-size: 40px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.area-1 h1{
+  margin: auto;
+  font-size: 40px;
+  font-family: 'Times New Roman', Times, serif;
+}
+#area1 {
+  position: relative;
+  background: url("../palawan.jpg") no-repeat center center/cover; /* your background image */
+  color: white;
+  text-align: center;
+  padding: 100px 50px;
+  overflow: hidden;
+}
+
+/* Orange transparent overlay */
+#area1::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(41, 236, 219, 0.406);
+  z-index: 0;
+}
+
+.areas-container {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Title */
+.areas-title {
+  background: #e0e5ea;
+  display: inline-block;
+  padding: 15px 60px;
+  border: solid rgb(9, 62, 71) 5px; 
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #0f0f0f;
+  margin-bottom: 60px;
+}
+
+
+/* Grid layout */
+.areas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 50px;
+  justify-items: center;
+}
+
+/* Each Area Item */
+.area-item {
+  text-decoration: none;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.area-item:hover {
+  transform: scale(1.08);
+}
+
+/* Circular logos */
+.area-item img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin-bottom: 15px;
+  background: #fff;
+  transition: transform 0.3s ease;
+}
+
+.area-item:hover img {
+  transform: rotate(5deg) scale(1.1);
+}
+
+/* Text below logo */
+.area-item h3 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.area-item p {
+  font-size: 0.95em;
+  color: #f9f9f9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .areas-title {
+    font-size: 2em;
+    padding: 10px 40px;
+  }
+
+  .area-item img {
+    width: 110px;
+    height: 110px;
+  }
+}
