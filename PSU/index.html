@@ -101,10 +101,7 @@
    
     </div>
     <div class="faculty-photo">
-      <video controls loop>
- <source src="video.mov" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+      <img src="./picture/1.jpg" alt="Faculty Group Photo" />
     </div>
   </section>
 
@@ -152,11 +149,14 @@
         <div class="cte-right">
           <img src="./picture/owl wc.png" alt="Owl Mascot" class="owl-img"> 
 
-         <!-- Container for teacher and video -->
+          <!-- Container for teacher and video -->
           <div class="media-section">
               <div class="video-frame">
                   <div class="video-wrapper" id="videoWrapper">
-                
+                <video controls loop>
+ <source src="video.mov" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
            
                   </div> 
               </div>
@@ -409,14 +409,57 @@ We express our heartfelt appreciation to our University President, our Vice Pres
         const hiddenElements = document.querySelectorAll('.fade-up, .fade-in');
         hiddenElements.forEach(el => observer.observe(el));
   </script>
+  <script>
+  const video = document.getElementById("bpedVideo");
+  const playButton = document.getElementById("playButton");
+  const wrapper = document.getElementById("videoWrapper");
 
+  let hasInteracted = false; // to unmute on first click
+
+  // Auto-hide play icon on autoplay
+  video.addEventListener("play", () => {
+    playButton.style.opacity = "0";
+  });
+
+  // Show icon again when video is paused
+  video.addEventListener("pause", () => {
+    playButton.style.opacity = "1";
+  });
+
+  // Click to toggle play/pause
+  wrapper.addEventListener("click", () => {
+    if (!hasInteracted) {
+      // Unmute on first user interaction
+      video.muted = false;
+      hasInteracted = true;
+    }
+
+    if (video.paused) {
+      video.play();
+    } else {
+      video.pause();
+    }
+  });
+
+  // Optional fallback to hide icon after 1s if autoplay works
+  setTimeout(() => {
+    if (!video.paused) {
+      playButton.style.opacity = "0";
+    }
+  }, 1000);
+</script>
+<script>
+  window.onscroll = function() {
+    if (window.pageYOffset > sticky) {
+      navbar.style.position = "fixed";
+      navbar.style.top = "0";
+      navbar.style.width = "100%";
+    } else {
+      navbar.style.position = "relative";
+    }
+  };
+</script>
 
 
 </body>
 </html>
-
-
-
-
-
-
