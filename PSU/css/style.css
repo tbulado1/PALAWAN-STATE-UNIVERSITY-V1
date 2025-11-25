@@ -80,17 +80,17 @@ nav.sticky {
 html {
   scroll-behavior: smooth;
 }
-
+ 
 .content-section {
-  min-height: 100vh;
+
   width: 100%;
-  padding: 100px 0;
-  top: -70px;
   text-align: center;
   display: block;
   opacity: 1;
   position: relative;
   transform: none;
+  padding: 60px 20px 40px;
+ 
 }
 
 /* Prevent navbar overlap */
@@ -283,19 +283,11 @@ span.green {
   text-align: center;
 }
 
-.footer-note {
-  margin-top: 40px;
-}
 
-.footer-note p {
-  font-size: 0.8em;
-  color: #cde0ff;
-}
 
-.footer-note h5 {
-  font-size: 1em;
-  font-weight: 700;
-}
+
+
+
 
 /* RIGHT SIDE CONTENT */
 .cte-right {
@@ -310,6 +302,7 @@ span.green {
   display: block;
   margin: 0 auto -10px auto;
 }
+
 
 .video-frame {
   background: white;
@@ -602,25 +595,9 @@ span.green {
 
 /* Responsive design */
 @media (max-width: 768px) {
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
+ 
 
-  .footer-left {
-    flex-direction: column;
-  }
 
-  .footer-right {
-    text-align: center;
-  }
-
-  .footer-bg {
-    width: 90%;
-    height: 200px;
-    opacity: 0.1;
-  }
 
   .logo {
     width: 70px;
@@ -639,16 +616,7 @@ span.green {
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{height:100%}
 
-.footer-grid{
-  display:grid;
-  grid-template-columns: 36% 0% 65%; /* left stack, center, right watermark */
-  align-items:stretch;
-  width:100%;
-  min-height:460px;            /* adjust to your needed height */
-  background:#FAF7EA;
-  position:relative;
-  padding:18px;                /* outer padding like your screenshot */
-}
+
 
 /* LEFT: stacked photos */
 .left-stack {
@@ -669,18 +637,7 @@ html,body{height:100%}
 }
 
 /* CENTER: text and the overlapping logo */
-.center-content{
-  position:relative;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-  padding:20px;
-  margin-top: 20px;
-  margin-left: 200px;
-  z-index:2;              /* above watermark */
-}
+
 
 .center-text{
     margin-top: -28rem;
@@ -808,37 +765,133 @@ html,body{height:100%}
   padding:6px;   /* inner white ring look */
 }
 
-/* RIGHT: large faint watermark */
-.right-watermark{
-  position:relative;
-  overflow:hidden;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  margin-top: -110px;
-  padding-right:100px;
-  
-}
-.right-watermark img{
-  width:1140%;
-  height:80%;
-  
-  opacity:0.14;            /* faint watermark */
-  transform:translateX(8%); /* push slightly to the right like in your photo */
-  pointer-events:none;
+
+/* footer bottom marque */
+/* --- 1. Image Marquee Styles --- */
+
+/* The outer container clips the content to prevent horizontal scroll bars */
+.image-marquee-container {
+    overflow: hidden;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #fff;
 }
 
-/* RESPONSIVE: stack on small screens */
-@media (max-width:900px){
-  .footer-grid{
-    grid-template-columns: 1fr;
-    gap:18px;
-    padding:12px;
+/* The element that holds all the images and scrolls */
+.image-marquee {
+    display: flex;
+    animation: scroll-left 30s linear infinite;
+    width: fit-content;
+}
 
-  }
-  .left-stack{flex-direction:row; gap:8px}
-  .stack-img{height:200px; width:50%}
-  .center-content{padding-top:18px}
-  .main-logo{top:36%}
-  .right-watermark{display:none} /* hide large watermark on small screens */
+/* Default (Desktop) Styles for the individual images */
+.image-marquee img {
+    height: 360px; /* Tall image on desktop */
+    width: 600px; 
+    margin: 0 10px;
+    border-radius: 8px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+/* Keyframes for the continuous scrolling effect */
+@keyframes scroll-left {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* --- 2. Mission Statement Styles --- */
+.mission-statement {
+    font-size: 1.9em;
+    max-width: 750px;
+    margin: 0 auto 40px;
+    line-height: 1.5;
+    color: #444;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background-color: #ccc;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* --- 3. Footer Styles --- */
+.site-footer {
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.footer-contact {
+    margin-bottom: 10px;
+}
+
+.footer-contact a {
+    color: #666;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.footer-social a {
+    color: #666;
+    font-size: 1.2em;
+    margin: 0 10px 15px;
+    display: inline-block;
+}
+
+.footer-copyright {
+    margin-top: 15px;
+    font-size: 0.8em;
+}
+
+
+/* =================================== */
+/* RESPONSIVE CODE           */
+/* =================================== */
+
+@media (max-width: 768px) {
+    /* Adjustments for Tablets and smaller screens */
+
+    /* Make images shorter to save vertical screen space on mobile */
+    .image-marquee img {
+        height: 120px; 
+        width: 200px; 
+        margin: 0 8px; /* Slightly less spacing */
+    }
+
+    .mission-statement {
+        font-size: 1.1em; /* Reduce font size for readability */
+        padding: 0 15px; /* Add some side padding */
+        margin-top: 50px; /* Add some top margin */
+    }
+    
+    .content-section {
+        padding: 40px 10px 30px; /* Reduce vertical padding */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adjustments for Mobile phones */
+    
+    .image-marquee img {
+        height: 100px; /* Even shorter images */
+        width: 160px; 
+        margin: 0 5px; 
+    }
+    
+    .mission-statement {
+        font-size: 1em; /* Further reduce font size */
+    }
+    
+    .site-footer {
+        font-size: 0.8em; /* Smaller footer text */
+    }
 }
