@@ -58,30 +58,24 @@
 </style>
 <body>
     
- <nav style="width: auto; padding: 20px; display: flex; align-items: center; justify-content: space-between;">
-  
-  <!-- Logo on the left -->
-  <div class="logo"> 
-    <a href="index.html">
-      <img src="./picture/dof.png" alt="Logo" style="height: 50px;">
-    </a>
-  </div>
+ <header id="navbar">
+        <div class="logo">
+            <a href="#"><img src="./picture/dof.png" alt="" height="40"></a>
+        </div>
+        
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            &#9776;
+        </button>
 
-  <!-- Navigation links -->
-  <ul class="nav-links" style="display: flex; list-style: none; gap: 20px;">
-    <li><a href="#home" class="active">Home</a></li>
-    <li><a href="#cte">CCRD </a></li>
-    <li><a href="#admin">Administration</a></li>
-    <li><a href="#areas">Areas</a></li>
-  </ul>
-
-  <!-- Login dropdown
-  <ul class="navbar-nav ml-auto">
-    <div class="dropdown-menu">
-      <a class="dropdown-item" style="color: #fff;" href="./login/login.php">Login</a>
-    </div>
-  </ul> -->
-</nav>
+        <nav class="nav-links" id="main-nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#cte">CTE</a></li>
+                <li><a href="#admin">Administration</a></li>
+                <li><a href="#areas">Areas</a></li>
+            </ul>
+        </nav>
+    </header>
 
 
   <!-- Home Section -->
@@ -443,3 +437,4 @@ We express our heartfelt appreciation to our University President, our Vice Pres
 
 </body>
 </html>
+
